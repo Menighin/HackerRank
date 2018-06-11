@@ -37,7 +37,8 @@ namespace DataStructures.Tests
         }
 
         [Fact]
-        public void TestAddWord() {
+        public void TestAddWord() 
+        {
             Assert.True(_trie.GetCount("x1") == 0, "Trie should not contain any word that matches 'x1'");
             _trie.AddWord("x1");
             Assert.True(_trie.GetCount("x1") == 1, "Trie should not contain any word that matches 'x1'");
