@@ -28,6 +28,9 @@ namespace DataStructures
             _heap[j] = temp;
         }
 
+		/// <summary>
+		/// Ensures the heap has capacity by resizing it if it needs
+		/// </summary>
         private void EnsureCapacity() 
         {
             if (Size == _capacity) 
