@@ -40,6 +40,9 @@ namespace DataStructures
             }
         }
 
+		/// <summary>
+		/// Check and apply the heap structure in bottom-up steps
+		/// </summary>
         private void HeapifyUp() 
         {
             var currIndex = Size - 1;
@@ -49,7 +52,10 @@ namespace DataStructures
                 currIndex = this.GetParentIndex(currIndex);
             }
         }
-
+		
+		/// <summary>
+		/// Check and apply the heap structure in top-down steps
+		/// </summary>
         private void HeapifyDown()
         {
             var currIndex = 0;
